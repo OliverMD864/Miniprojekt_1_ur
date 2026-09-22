@@ -2,8 +2,8 @@ import pygame
 import math
 import time
 
-pygame.init() # Initialize Pygame
-screen = pygame.display.set_mode((640, 640)) # Create a window of 640x640 pixels
+pygame.init() 
+screen = pygame.display.set_mode((640, 640)) # laver et vindue af 640x640 pixels
 
 run_flag = True
 while run_flag is True:
@@ -11,7 +11,7 @@ while run_flag is True:
         if event.type == pygame.QUIT:
             run_flag = False
 
-    screen.fill((255, 255, 255)) # Fill the screen with white
+    screen.fill((255, 255, 255)) 
 
     # klokke cirkel
     pygame.draw.circle(screen, (0, 0, 0), (320, 320), 210, 2) # tegner en cirkel med radius 200 og center i (320, 320)
@@ -40,12 +40,12 @@ while run_flag is True:
     length_minute = 150
     length_hour = 100
 
-    # center of the clock
+    # center for uret
     x_start = 320  
     y_start = 320
     start_pos = (x_start, y_start)
 
-    # Time
+    # gmtime og så i danmark er det +2 pga sommertid
     rn = time.gmtime()
     timer = rn.tm_hour+2
     minute = rn.tm_min
@@ -78,4 +78,4 @@ while run_flag is True:
     clock = pygame.time.Clock() # giver loopet en clock så den ikke kører for hurtigt
     dt = clock.tick(60)
 
-    pygame.display.flip() # Update the display
+    pygame.display.flip() 
