@@ -1,1 +1,1 @@
-![Skærmbillede](./skærmbilleder/Skærmbillede%202026-10-09%20091500.png)
+![Miniprojekt ur](./skærmbilleder/Miniprojekt_ur.png)
