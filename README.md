@@ -1,1 +1,1 @@
-![Skærmbillede af Miniprojekt ur](Skærmbilleder/Miniprojekt_ur.png)
+![Skærmbillede af Miniprojekt ur](Miniprojekt_1_ur/Miniprojekt_ur.png)
