@@ -24,6 +24,7 @@ while run_ur is True:
     tid_decimal = (timer + minute / 60) % 24
     sol_degree = (tid_decimal - 12) * 15 - 90
 
+    # farver til baggrund og visere og ur ift. tid
     if tid_decimal < 6 or tid_decimal >= 18:
         baggrund = (15, 20, 50) # nat
         visere_og_urfarve = (255, 255, 255)
@@ -80,7 +81,7 @@ while run_ur is True:
     degree_hour = (timer + minute / 60) * 30 -90 # / 60 deler timens 30 grader op i 60 skridt 0,5 pr. minut, så viseren glider
 
 
-    
+    # sol og måne grader
     sol_x = 320 + 80 * math.cos(math.radians(sol_degree))
     sol_y = 320 + 80 * math.sin(math.radians(sol_degree))
     
@@ -96,10 +97,12 @@ while run_ur is True:
     mone_farve = (180, 180, 200)
     mone_position = (mone_x, mone_y)
     mone_radius = 12
-    
+
+    # tegning af solen og månen
     pygame.draw.circle(screen, sol_farve, sol_position, sol_radius)
     pygame.draw.circle(screen, mone_farve, mone_position, mone_radius)
-    
+
+    # en skille linje som indikere horisontion 
     pygame.draw.line(screen, (0,0,0), (160,320), (480,320), 2)
 
     # sekundviser
