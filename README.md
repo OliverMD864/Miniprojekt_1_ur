@@ -1,1 +1,1 @@
-![Skærmbillede](skærmbilleder/Skærmbillede%202026-10-09%20091500.jpg)
+![Skærmbillede](./skærmbilleder/Skærmbillede%202026-10-09%20091500.png)
